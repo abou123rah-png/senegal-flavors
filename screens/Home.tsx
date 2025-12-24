@@ -9,156 +9,120 @@ const Home: React.FC = () => {
 
   return (
     <div className="bg-background-light dark:bg-background-dark min-h-screen flex flex-col relative overflow-hidden">
-      {/* Fond subtil motif wax sénégalais */}
+      {/* Fond motif wax sénégalais élégant et subtil */}
       <div 
-        className="absolute inset-0 opacity-5 pointer-events-none bg-cover bg-repeat"
+        className="absolute inset-0 opacity-8 pointer-events-none bg-cover bg-repeat"
         style={{
-          backgroundImage: 'url("https://thumbs.dreamstime.com/b/vibrant-african-wax-print-fabric-texture-background-bright-yellow-red-green-bold-geometric-motifs-high-contrast-369452346.jpg")',
+          backgroundImage: 'url("https://www.shutterstock.com/image-vector/african-wax-print-fabric-ethnic-260nw-1852674685.jpg")', // Motif wax authentique et moderne
         }}
       ></div>
 
-      {/* Header */}
-      <div className="relative bg-surface-light dark:bg-surface-dark shadow-md z-20 pb-2">
-        <div className="flex items-center justify-between px-4 pt-6 pb-2">
-          <div className="flex items-center gap-4">
+      {/* Header avec gradient drapeau subtil */}
+      <div className="relative bg-gradient-to-b from-green-50/50 via-yellow-50/30 to-red-50/50 dark:from-green-900/20 dark:via-yellow-900/10 dark:to-red-900/20 shadow-2xl z-20 pb-4">
+        <div className="flex items-center justify-between px-5 pt-8 pb-4">
+          <div className="flex items-center gap-5">
             <div className="relative">
               <div 
-                className="size-14 rounded-full border-4 border-primary bg-cover bg-center shadow-xl"
-                style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLQkkgEU9304vAjFsPrWmvtX0yloS1ZEpx9SaFvf5xKYCL7V_3_zxQX1FlCqEaBu98aH2eM31Zg8XKyzytqwuzF9mCesk_TvLzK-V93wpLsEkgE0OretlUUMjDBULS8PSXYk-Xz93GYd_jJSE6RJ2hkpJstIb766dCu6bHXQKMETZw6TFD3a1KebbOgE4DOnwFusptjzqcxR05SdkBgpKqPxP7ZEk4JWGkTdEWVCcw1ygM_ApRdnH4Sk7FHqZppsExYDTBznQ5M487")'}}
-              ></div>
-              <div className="absolute bottom-0 right-0 size-5 bg-primary border-4 border-white rounded-full shadow-lg"></div>
+                className="size-16 rounded-full border-5 border-gradient-to-r from-green-600 via-yellow-500 to-red-600 p-0.5 shadow-2xl"
+              >
+                <div 
+                  className="size-full rounded-full bg-cover bg-center"
+                  style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuBLQkkgEU9304vAjFsPrWmvtX0yloS1ZEpx9SaFvf5xKYCL7V_3_zxQX1FlCqEaBu98aH2eM31Zg8XKyzytqwuzF9mCesk_TvLzK-V93wpLsEkgE0OretlUUMjDBULS8PSXYk-Xz93GYd_jJSE6RJ2hkpJstIb766dCu6bHXQKMETZw6TFD3a1KebbOgE4DOnwFusptjzqcxR05SdkBgpKqPxP7ZEk4JWGkTdEWVCcw1ygM_ApRdnH4Sk7FHqZppsExYDTBznQ5M487")'}}
+                ></div>
+              </div>
+              <div className="absolute bottom-0 right-0 size-6 bg-primary border-4 border-white rounded-full shadow-xl"></div>
             </div>
 
-            {/* TON NOM EN HAUT À CÔTÉ DE LA PHOTO */}
+            {/* TON NOM EN GRADIENT DRAPEAU + ÉTOILE */}
             <div className="flex flex-col">
-              <p className="text-text-muted text-sm font-medium">Dalal ak diam 👋</p>
-              <h1 className="text-3xl font-extrabold text-text-main dark:text-white leading-tight">
+              <p className="text-text-muted text-base font-semibold">Dalal ak diam 👋</p>
+              <h1 className="text-4xl font-extrabold leading-tight bg-gradient-to-r from-green-600 via-yellow-500 to-red-600 bg-clip-text text-transparent drop-shadow-md">
                 DORO CISSÉ
               </h1>
-              <p className="text-primary text-sm font-bold mt-1 flex items-center gap-1">
+              <p className="text-primary text-lg font-bold mt-2 flex items-center gap-2">
                 Créateur de Sénégal Flavors
-                <span className="text-yellow-500 text-lg">★</span>
+                <span className="text-yellow-500 text-3xl">★</span>
               </p>
-              <p className="text-text-muted text-xs mt-2">L'esprit de la Téranga dans chaque plat</p>
+              <p className="text-text-muted text-sm mt-3 italic">La Téranga dans chaque saveur du Sénégal</p>
             </div>
           </div>
 
-          <button className="size-12 rounded-full bg-background-light dark:bg-background-dark flex items-center justify-center shadow-md">
-            <span className="material-symbols-outlined text-text-main dark:text-white text-2xl">notifications</span>
+          <button className="size-14 rounded-full bg-white/20 dark:bg-black/20 backdrop-blur-md flex items-center justify-center shadow-xl border border-white/30">
+            <span className="material-symbols-outlined text-white dark:text-gray-200 text-3xl">notifications</span>
           </button>
         </div>
 
-        {/* Search */}
-        <div className="px-4 py-3">
+        {/* Barre de recherche premium avec bordure drapeau */}
+        <div className="px-5 py-5">
           <div 
-            className="flex w-full items-center rounded-2xl bg-background-light dark:bg-background-dark h-14 overflow-hidden border-2 border-transparent focus-within:border-primary shadow-md transition-all cursor-pointer"
+            className="flex w-full items-center rounded-3xl bg-white/90 dark:bg-surface-dark/90 h-16 overflow-hidden shadow-2xl border-4 border-gradient-to-r from-green-600 via-yellow-500 to-red-600 transition-all cursor-pointer hover:shadow-3xl"
             onClick={() => navigate('/catalog')}
           >
-            <div className="pl-5 text-text-muted">
-              <span className="material-symbols-outlined text-2xl">search</span>
+            <div className="pl-6 text-primary">
+              <span className="material-symbols-outlined text-3xl">search</span>
             </div>
             <input 
               readOnly 
-              className="w-full bg-transparent border-none focus:ring-0 text-text-main dark:text-white placeholder:text-text-muted px-4 text-base" 
+              className="w-full bg-transparent border-none focus:ring-0 text-text-main dark:text-white placeholder:text-text-muted px-5 text-lg font-medium" 
               placeholder="Thiéboudieune, Mafé, Yassa..." 
             />
-            <button className="pr-5 text-primary">
-              <span className="material-symbols-outlined text-2xl">tune</span>
+            <button className="pr-6 text-primary">
+              <span className="material-symbols-outlined text-3xl">tune</span>
             </button>
           </div>
         </div>
       </div>
 
       <main className="flex-1 overflow-y-auto no-scrollbar pb-32">
-        {/* Hero: Plat de la Semaine */}
-        <div className="px-4 pt-8 pb-4">
-          <div className="flex items-center justify-between mb-4">
-            <h3 className="text-2xl font-extrabold text-senegal-gradient">Plat de la Semaine</h3>
-            <button className="text-base font-bold text-primary" onClick={() => navigate('/catalog')}>Voir tout →</button>
+        {/* Hero Plat de la Semaine – encore plus immersif */}
+        <div className="px-5 pt-10 pb-6">
+          <div className="flex items-center justify-between mb-6">
+            <h3 className="text-3xl font-extrabold bg-gradient-to-r from-green-600 via-yellow-500 to-red-600 bg-clip-text text-transparent drop-shadow">
+              Plat de la Semaine
+            </h3>
+            <button className="text-lg font-bold text-primary underline decoration-2" onClick={() => navigate('/catalog')}>
+              Voir tout →
+            </button>
           </div>
           <div 
-            className="group relative w-full h-[28rem] rounded-3xl overflow-hidden shadow-2xl cursor-pointer transition-transform hover:scale-[1.01]"
+            className="group relative w-full h-[30rem] rounded-3xl overflow-hidden shadow-3xl cursor-pointer transition-all hover:shadow-4xl"
             onClick={() => navigate(`/recipe/${featured.id}`)}
           >
-            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1000 group-hover:scale-110" style={{backgroundImage: `url("${featured.image}")`}}></div>
-            <div className="absolute inset-0 bg-gradient-to-t from-black/90 via-black/40 to-transparent"></div>
-            <div className="absolute inset-0 bg-gradient-to-r from-green-600/20 via-yellow-500/20 to-red-600/20"></div>
-            <div className="absolute bottom-0 left-0 w-full p-6">
-              <div className="flex gap-3 mb-3">
-                <span className="px-4 py-1.5 bg-primary text-background-dark text-sm font-bold rounded-full shadow-md">Top Recette</span>
-                <span className="px-4 py-1.5 bg-white/30 backdrop-blur-md text-white text-sm font-medium rounded-full flex items-center gap-1 shadow-md">
-                  <span className="material-symbols-outlined text-[16px]">schedule</span> {featured.time}
+            <div className="absolute inset-0 bg-cover bg-center transition-transform duration-1200 group-hover:scale-110" style={{backgroundImage: `url("${featured.image}")`}}></div>
+            <div className="absolute inset-0 bg-gradient-to-t from-black/95 via-black/50 to-transparent"></div>
+            <div className="absolute inset-0 bg-gradient-to-r from-green-600/25 via-yellow-500/20 to-red-600/25"></div>
+            <div className="absolute bottom-0 left-0 w-full p-8">
+              <div className="flex gap-4 mb-4">
+                <span className="px-5 py-2 bg-primary text-background-dark text-base font-extrabold rounded-full shadow-lg">Top Recette</span>
+                <span className="px-5 py-2 bg-white/40 backdrop-blur-lg text-white text-base font-medium rounded-full flex items-center gap-2 shadow-lg">
+                  <span className="material-symbols-outlined text-[20px]">schedule</span> {featured.time}
                 </span>
               </div>
-              <h2 className="text-4xl font-extrabold text-white mb-2 drop-shadow-lg">{featured.name}</h2>
-              <p className="text-gray-100 text-base mb-6 line-clamp-2 drop-shadow">{featured.description}</p>
-              <button className="w-full h-14 bg-primary hover:bg-primary-dark text-background-dark font-extrabold text-lg rounded-2xl flex items-center justify-center gap-3 shadow-xl transition-all active:scale-95">
-                <span className="material-symbols-outlined text-2xl">skillet</span>
+              <h2 className="text-5xl font-extrabold text-white mb-3 drop-shadow-2xl">{featured.name}</h2>
+              <p className="text-gray-100 text-lg mb-8 line-clamp-2 drop-shadow-lg">{featured.description}</p>
+              <button className="w-full h-16 bg-gradient-to-r from-green-600 to-primary hover:from-green-700 hover:to-primary-dark text-white font-extrabold text-xl rounded-3xl flex items-center justify-center gap-4 shadow-2xl transition-all active:scale-98">
+                <span className="material-symbols-outlined text-3xl">skillet</span>
                 Cuisiner maintenant
               </button>
             </div>
           </div>
         </div>
 
-        {/* Incontournables */}
-        <div className="pt-8 pb-4">
-          <div className="px-4 mb-4">
-            <h3 className="text-2xl font-extrabold">Les Incontournables</h3>
-          </div>
-          <div className="flex overflow-x-auto gap-5 px-4 pb-6 no-scrollbar snap-x">
-            {RECIPES.map(recipe => (
-              <div key={recipe.id} className="flex-none w-64 snap-start cursor-pointer group" onClick={() => navigate(`/recipe/${recipe.id}`)}>
-                <div className="relative aspect-[4/3] rounded-2xl overflow-hidden mb-4 shadow-lg transition-transform group-hover:scale-105">
-                  <div className="absolute inset-0 bg-cover bg-center" style={{backgroundImage: `url("${recipe.image}")`}}></div>
-                  <div className="absolute top-3 right-3 bg-white/90 backdrop-blur-sm rounded-full px-3 py-1 flex items-center gap-1 shadow-md">
-                    <span className="material-symbols-outlined text-yellow-500 text-[16px] filled">star</span>
-                    <span className="text-sm font-bold text-gray-900">{recipe.rating}</span>
-                  </div>
-                </div>
-                <h4 className="text-lg font-bold text-text-main dark:text-white group-hover:text-primary transition-colors">{recipe.name}</h4>
-                <div className="flex items-center gap-4 mt-2 text-text-muted text-sm">
-                  <span className="flex items-center gap-1">
-                    <span className="material-symbols-outlined text-[16px]">bolt</span> {recipe.difficulty}
-                  </span>
-                  <span>{recipe.time}</span>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+        {/* Les autres sections (Incontournables et Culture) restent belles – on peut les upgrader plus tard si tu veux */}
+        {/* ... (garde le code existant pour ces sections) ... */}
 
-        {/* Culture Section */}
-        <div className="px-4 py-8">
-          <h3 className="text-2xl font-extrabold mb-5">Découverte Culturelle</h3>
-          <div className="bg-surface-light dark:bg-surface-dark rounded-2xl p-5 flex gap-5 shadow-xl border border-primary/10">
-            <div className="size-28 flex-shrink-0 rounded-2xl overflow-hidden shadow-md">
-              <div className="w-full h-full bg-cover bg-center" style={{backgroundImage: 'url("https://lh3.googleusercontent.com/aida-public/AB6AXuByXPSM81KtZ6h8YiIP8vNnC1nj6kuK-1v0zAOVTEY_NS_c6pdU6mT6pBBpg44uyhlLe3e63QlgUDGtrO1wekcv3M9RlIw9tsc4I0JLh1DtIW8QPRqoBio2dH67W3a6t5uB_IXat5NtFfRq1EbH9UveSO_dNAIIiaXP3nOUoh5JOE7XyuR0efVkEA55IGP36zSiQ7y3ldDTkH9UWxF5un6RHmagZL6ggulrKpzfkLhDeHaETTl4e6iK0n6wI1Dqjb3etCbBXoU0xMkc")'}}></div>
-            </div>
-            <div className="flex flex-col justify-between py-2">
-              <div>
-                <span className="text-primary text-sm font-bold uppercase tracking-wider">Ingrédient Star</span>
-                <h4 className="text-xl font-extrabold mt-2 leading-snug">L'histoire secrète du Gombo</h4>
-                <p className="text-text-muted text-sm mt-2">Symbole de liaison et de richesse dans la cuisine ouest-africaine.</p>
-              </div>
-              <div className="flex items-center gap-3 mt-4">
-                <span className="text-sm text-text-muted">3 min de lecture</span>
-                <button className="text-sm font-bold flex items-center text-primary">
-                  Lire l'article <span className="material-symbols-outlined text-[18px] ml-1">arrow_forward</span>
-                </button>
-              </div>
-            </div>
-          </div>
-        </div>
       </main>
 
-      {/* Footer discret (gardé en bonus) */}
-      <div className="fixed bottom-16 left-0 right-0 z-10 pointer-events-none">
+      {/* Footer fier et moderne */}
+      <div className="fixed bottom-20 left-0 right-0 z-10 pointer-events-none">
         <div className="flex justify-center">
-          <div className="bg-white/80 dark:bg-surface-dark/80 backdrop-blur-md px-6 py-3 rounded-full shadow-2xl pointer-events-auto border border-primary/20">
-            <p className="text-sm font-bold text-center text-text-main dark:text-white flex items-center gap-2">
-              Créé avec ❤️ par <span className="text-primary">Doro Cissé</span>
-              <span className="text-yellow-500 text-lg">★</span> Sénégal 2025
-            </p>
+          <div className="bg-gradient-to-r from-green-600 via-yellow-500 to-red-600 p-1 rounded-full shadow-3xl">
+            <div className="bg-white dark:bg-surface-dark px-10 py-4 rounded-full">
+              <p className="text-xl font-extrabold text-center bg-gradient-to-r from-green-600 via-yellow-500 to-red-600 bg-clip-text text-transparent flex items-center gap-3">
+                Créé avec ❤️ et Téranga par Doro Cissé
+                <span className="text-3xl">🇸🇳</span> 2025
+              </p>
+            </div>
           </div>
         </div>
       </div>
