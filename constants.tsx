@@ -1,4 +1,3 @@
-
 import { Recipe } from './types';
 
 export const RECIPES: Recipe[] = [
@@ -89,5 +88,175 @@ export const RECIPES: Recipe[] = [
       }
     ],
     tags: ['Rapide', 'Citronné']
+  },
+
+  // === NOUVELLES RECETTES AJOUTÉES ===
+  {
+    id: 'mafe',
+    name: 'Mafé (Sauce Arachide)',
+    description: 'Ragoût crémeux à la pâte d\'arachide, viande tendre et légumes racines. Un classique réconfortant d\'Afrique de l\'Ouest.',
+    image: 'https://www.linsfood.com/wp-content/uploads/2013/08/mafe-stew.jpg',
+    time: '1h 45m',
+    difficulty: 'Moyen',
+    rating: 4.9,
+    reviews: 180,
+    chef: 'Fatou Seck',
+    history: 'Originaire du Mali mais très populaire au Sénégal, le Mafé met en valeur l\'arachide, culture majeure du pays depuis le 19e siècle.',
+    chefTips: [
+      "Utilisez de la pâte d\'arachide 100% naturelle pour un goût authentique.",
+      "Laissez mijoter longtemps : plus ça cuit, plus la sauce devient onctueuse."
+    ],
+    ingredients: [
+      { name: 'Boeuf ou agneau', amount: '1 kg', category: 'Protéine' },
+      { name: 'Pâte d\'arachide naturelle', amount: '300g', category: 'Base' },
+      { name: 'Patates douces', amount: '4', category: 'Légumes' },
+      { name: 'Carottes', amount: '4', category: 'Légumes' },
+      { name: 'Chou', amount: '1/2', category: 'Légumes' },
+      { name: 'Concentré de tomate', amount: '100g', category: 'Sauce' }
+    ],
+    steps: [
+      { id: 1, title: 'Dorer la viande', description: 'Faire revenir la viande coupée en morceaux jusqu\'à coloration.' },
+      { id: 2, title: 'Préparer la sauce', description: 'Diluer la pâte d\'arachide avec de l\'eau, ajouter tomate et épices.' },
+      { id: 3, title: 'Mijotage', description: 'Incorporer les légumes et laisser cuire à feu doux 1h30.' }
+    ],
+    tags: ['Ragoût', 'Arachide', 'Réconfort']
+  },
+  {
+    id: 'soupou-kandja',
+    name: 'Soupou Kandja',
+    description: 'Sauce épaisse au gombo frais, poisson fumé et huile de palme. Un plat traditionnel riche en saveurs marines.',
+    image: 'https://eatyourworld.com/wp-content/uploads/2023/07/soupe-kandja-high-res.jpg',
+    time: '2h',
+    difficulty: 'Difficile',
+    rating: 4.7,
+    reviews: 95,
+    chef: 'Mame Diarra',
+    history: 'Plat emblématique de Saint-Louis et de la côte sénégalaise, où le gombo et les produits de la mer abondent.',
+    chefTips: [
+      "Utilisez de l\'huile de palme rouge pour la couleur et l\'authenticité.",
+      "Le guedj (poisson séché) est indispensable pour le goût fumé."
+    ],
+    ingredients: [
+      { name: 'Gombo frais', amount: '1 kg', category: 'Légumes' },
+      { name: 'Poisson fumé (guedj)', amount: '200g', category: 'Protéine' },
+      { name: 'Huile de palme rouge', amount: '150ml', category: 'Base' },
+      { name: 'Crabe ou crevettes', amount: '300g', category: 'Fruit de mer' },
+      { name: 'Oignons', amount: '3', category: 'Légumes' }
+    ],
+    steps: [
+      { id: 1, title: 'Préparation du gombo', description: 'Laver et couper le gombo en rondelles.' },
+      { id: 2, title: 'Base aromatique', description: 'Faire revenir le poisson fumé et les oignons dans l\'huile de palme.' },
+      { id: 3, title: 'Cuisson lente', description: 'Ajouter le gombo et laisser mijoter jusqu\'à épaississement.' }
+    ],
+    tags: ['Gombo', 'Mer', 'Traditionnel']
+  },
+  {
+    id: 'ceebu-yapp',
+    name: 'Ceebu Yapp',
+    description: 'Version viande du plat national : riz parfumé à la viande d\'agneau ou boeuf et légumes farcis.',
+    image: 'https://eatyourworld.com/wp-content/uploads/2012/07/ceebu-yapp.jpg',
+    time: '2h',
+    difficulty: 'Difficile',
+    rating: 4.7,
+    reviews: 110,
+    chef: 'Babacar Fall',
+    history: 'Variante quotidienne du Thiéboudieune quand le poisson est cher. Très apprécié en famille.',
+    chefTips: [
+      "Farcir les légumes (poivrons, carottes) avec le \"roof\" pour plus de saveur."
+    ],
+    ingredients: [
+      { name: 'Viande d\'agneau ou boeuf', amount: '1.5 kg', category: 'Protéine' },
+      { name: 'Riz', amount: '1.5 kg', category: 'Base' },
+      { name: 'Légumes variés (carottes, chou, manioc)', amount: '800g', category: 'Légumes' }
+    ],
+    steps: [
+      { id: 1, title: 'Préparer le roof', description: 'Piler ail, persil, piment et farcir la viande et légumes.' },
+      { id: 2, title: 'Cuire la viande', description: 'Faire dorer puis mijoter avec sauce tomate.' },
+      { id: 3, title: 'Rossi du riz', description: 'Cuire le riz à la vapeur sur la sauce.' }
+    ],
+    tags: ['Viande', 'Riz', 'Familial']
+  },
+  {
+    id: 'pastels',
+    name: 'Pastels (Beignets Farcis)',
+    description: 'Petits beignets frits farcis au poisson épicé. Idéal en entrée ou snack.',
+    image: 'https://www.chefspencil.com/wp-content/uploads/Pastels-Senegalese-Fish-Fritters-.jpg',
+    time: '1h',
+    difficulty: 'Moyen',
+    rating: 4.8,
+    reviews: 200,
+    chef: 'Aminata Sow',
+    history: 'Street-food incontournable sur les plages et marchés sénégalais, souvent servi avec sauce tomate piquante.',
+    chefTips: [
+      "La pâte doit être fine pour un croustillant parfait.",
+      "Utilisez du thon ou du poisson frais pour la farce."
+    ],
+    ingredients: [
+      { name: 'Farine', amount: '500g', category: 'Base' },
+      { name: 'Poisson ou thon', amount: '400g', category: 'Protéine' },
+      { name: 'Oignons, persil, piment', amount: 'au goût', category: 'Condiment' },
+      { name: 'Huile pour friture', amount: '1L', category: 'Cuisson' }
+    ],
+    steps: [
+      { id: 1, title: 'Préparer la pâte', description: 'Mélanger farine, eau, sel et laisser reposer.' },
+      { id: 2, title: 'La farce', description: 'Cuire et émietter le poisson avec épices.' },
+      { id: 3, title: 'Friture', description: 'Former les pastels et frire jusqu\'à doré.' }
+    ],
+    tags: ['Entrée', 'Frit', 'Street-food']
+  },
+  {
+    id: 'domoda',
+    name: 'Domoda (Variante Arachide)',
+    description: 'Ragoût ultra-crémeux à la pâte d\'arachide, très proche du Mafé mais souvent plus doux.',
+    image: 'https://www.remitly.com/blog/wp-content/uploads/2023/09/gambia-domoda-scaled.jpg',
+    time: '1h 30m',
+    difficulty: 'Moyen',
+    rating: 4.8,
+    reviews: 140,
+    chef: 'Khady Diop',
+    history: 'Plat partagé avec la Gambie voisine, où il est considéré comme plat national.',
+    chefTips: [
+      "Ajoutez un peu de jus de citron pour équilibrer la richesse."
+    ],
+    ingredients: [
+      { name: 'Poulet ou boeuf', amount: '1 kg', category: 'Protéine' },
+      { name: 'Beurre d\'arachide', amount: '250g', category: 'Base' },
+      { name: 'Tomates', amount: '6', category: 'Légumes' },
+      { name: 'Légumes racines', amount: '600g', category: 'Légumes' }
+    ],
+    steps: [
+      { id: 1, title: 'Dorer la viande', description: 'Faire revenir avec oignons.' },
+      { id: 2, title: 'Sauce arachide', description: 'Incorporer beurre d\'arachide dilué.' },
+      { id: 3, title: 'Mijoter', description: 'Ajouter légumes et cuire lentement.' }
+    ],
+    tags: ['Crémeux', 'Arachide', 'Gambien']
+  },
+  {
+    id: 'dibi',
+    name: 'Dibi (Agneau Grillé)',
+    description: 'Agneau mariné et grillé, servi avec oignons caramélisés et sauce moutarde. Street-food légendaire.',
+    image: 'https://www.vice.com/wp-content/uploads/sites/2/2021/06/1619807126046-dibi-recipe.jpeg',
+    time: '1h + marinade',
+    difficulty: 'Facile',
+    rating: 4.9,
+    reviews: 220,
+    chef: 'Ibrahima Ndoye',
+    history: 'Le roi de la street-food dakaroise, vendu par les \"dibiteries\" toute la nuit.',
+    chefTips: [
+      "Marinez la veille pour une viande ultra-tendre.",
+      "La sauce moutarde-oignon est obligatoire !"
+    ],
+    ingredients: [
+      { name: 'Épaule d\'agneau', amount: '1.5 kg', category: 'Protéine' },
+      { name: 'Oignons', amount: '1 kg', category: 'Légumes' },
+      { name: 'Moutarde', amount: '100g', category: 'Condiment' },
+      { name: 'Épices (poivre, ail)', amount: 'au goût', category: 'Epices' }
+    ],
+    steps: [
+      { id: 1, title: 'Marinade', description: 'Mélanger viande avec moutarde, ail et épices (minimum 2h).' },
+      { id: 2, title: 'Grillage', description: 'Cuire au barbecue ou poêle-grill jusqu\'à caramélisation.' },
+      { id: 3, title: 'Oignons', description: 'Caraméliser les oignons et servir dessus.' }
+    ],
+    tags: ['Grillé', 'Street-food', 'Agneau']
   }
 ];
