@@ -38,11 +38,11 @@ const Catalog: React.FC = () => {
 
   return (
     <div className="bg-background-light dark:bg-background-dark min-h-screen pb-24 relative overflow-hidden">
-      {/* Fond motif wax subtil */}
+      {/* Fond wax light subtil et professionnel (proposition 3 choisie) */}
       <div 
-        className="absolute inset-0 opacity-8 pointer-events-none bg-cover bg-repeat"
+        className="absolute inset-0 opacity-5 pointer-events-none bg-cover bg-repeat"
         style={{
-          backgroundImage: 'url("https://www.shutterstock.com/image-vector/african-ethnic-tribal-clash-ornament-600nw-2674095379.jpg")',
+          backgroundImage: 'url("https://www.shutterstock.com/image-vector/light-ethnic-pattern-green-yellow-260nw-2418077485.jpg")',
         }}
       ></div>
 
