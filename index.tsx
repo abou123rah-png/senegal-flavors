@@ -14,3 +14,4 @@ root.render(
     <App />
   </React.StrictMode>
 );
+// Force rebuild Vercel - Doro Cissé 2025 - fond wax light subtil
