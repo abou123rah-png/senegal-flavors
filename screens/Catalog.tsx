@@ -38,11 +38,11 @@ const Catalog: React.FC = () => {
 
   return (
     <div className="bg-background-light dark:bg-background-dark min-h-screen pb-24 relative overflow-hidden">
-      {/* Fond wax light subtil et professionnel (proposition 3 choisie) */}
+      {/* Fond gradient drapeau sénégalais ultra-subtil et professionnel */}
       <div 
-        className="absolute inset-0 opacity-5 pointer-events-none bg-cover bg-repeat"
+        className="absolute inset-0 opacity-10 pointer-events-none"
         style={{
-          backgroundImage: 'url("https://www.shutterstock.com/image-vector/light-ethnic-pattern-green-yellow-260nw-2418077485.jpg")',
+          background: 'linear-gradient(to bottom, #00853e15, #ffcd0015, #c8102e15)',
         }}
       ></div>
 
