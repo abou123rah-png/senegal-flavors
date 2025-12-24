@@ -1,0 +1,8 @@
+{
+  "name": "Sénégal Flavors",
+  "description": "An immersive culinary journey into Senegalese cuisine, featuring authentic recipes, cultural stories, and an AI-powered chef assistant.",
+  "requestFramePermissions": [
+    "camera",
+    "microphone"
+  ]
+}
